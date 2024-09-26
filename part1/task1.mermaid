@@ -1,0 +1,42 @@
+classDiagram
+class User {
+    + String Email
+    + String Name
+    + UUID id
+    + DateTime created_at
+    + DateTime updated_at
+    +void login()
+    +void logout ()
+}
+
+class Review {
+    + UUID id
+    + String content
+    + int rating
+    + DateTime created_at
+    + DateTime updated_at
+    +void editReview(String content)
+}
+
+User --> Review : Writes
+
+class Place {
+    + UUID id
+    + String name
+    + String description
+    + String location
+    + DateTime created_at
+    + DateTime updated_at
+    +void addReview(Review)
+    +void removeReview(Review)
+}
+
+class Amenity {
+    + UUID id
+    + String name
+    + DateTime created_at
+    + DateTime updated_at
+    +void addAmenity(Place)
+}
+
+Place o-- Amenity : Has
