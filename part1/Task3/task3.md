@@ -12,7 +12,10 @@ class PresentationLayer {
     +ServiceAPI
 }
 class BusinessLogicLayer {
-    +ModelClasses
+    +User
+    +Place
+    +Review
+    +Amenity
 }
 class PersistenceLayer {
     +DatabaseAccess
@@ -36,44 +39,57 @@ classDiagram
 class User {
     + String Email
     + String Name
-    + UUID id
+    + UUID4 id
+    - String Password
     + DateTime created_at
     + DateTime updated_at
+    +edit_user()
+    +delete_user()
     +void login()
     +void logout ()
+    +create_place()
 }
 
 class Review {
-    + UUID id
+    + UUID4 id
     + String content
     + int rating
     + DateTime created_at
     + DateTime updated_at
+    + Float rating
     +void editReview(String content)
 }
 
-User --> Review : Writes
-
 class Place {
-    + UUID id
+    + UUID4 id
+    - UUID4 owner id
     + String name
     + String description
     + String location
+    + Float price
+    + List amenity
+    + List review
     + DateTime created_at
     + DateTime updated_at
     +void addReview(Review)
     +void removeReview(Review)
+    +update_place()
 }
 
 class Amenity {
-    + UUID id
+    + UUID4 id
     + String name
     + DateTime created_at
     + DateTime updated_at
     +void addAmenity(Place)
+    +void edit_amenity()
+    +void delete_amenity()
 }
 
-Place o-- Amenity : Has
+Place o-- Amenity : Contains
+Place --> Review : Receives
+User --> Review : Writes
+User --> Place : Owner
 
 ```
 The detailed class diagram showcases the entities in the Business Logic Layer and their relationships. It includes the User, Place, Review, and Amenity classes, along with their attributes, methods, and interactions.
