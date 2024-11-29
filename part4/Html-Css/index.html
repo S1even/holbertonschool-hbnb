@@ -10,9 +10,10 @@
 </head>
 <body>
     <header>
+        <div class="wrapper">
         <nav>
-            <img alt="HBnB logo" src="icon.png" width="250" height="70">
-            <ul class="nav-link">
+            <img alt="HBnB logo" src="icon.png" class="logo">
+            <ul class="nav-links">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="login.html" class="nav-link login-button">Login</a></li>
             </ul>
@@ -27,8 +28,8 @@
                 <select id="price-filter">
                     <option value="all">All Prices</option>
                     <option value="100">Under 100€</option>
-                    <option value="500">Under 500€</option>
-                    <option value="1000">Under 1000€</option>
+                    <option value="500">Under 150€</option>
+                    <option value="1000">Under 200€</option>
                 </select>
             </div>
 
@@ -36,21 +37,46 @@
             <div id="places-list" class="places-grid">
                 <div class="place-card">
                     <h2>Beachside Paradise</h2>
-                    <p>Price per night: 200€</p>
-                    <button class="details-button">View Details</button>
-                </div>
+                    <img alt="Paradise logo" src="Paradise.jpeg" class="place-image">
+                    <div class="price-rating">
+                        <p class="price">Price per night: <span>200€</span></p>
+                        <div class="rating">
+                          ★★★★★
+                        </div>
+                        <a href="place.html">
+                        <button class="details-button index-button">View Details</button>
+                      </div>
+                        </a>
+                    </div>
                 <div class="place-card">
                     <h2>Mountain Retreat</h2>
-                    <p>Price per night: 150€</p>
-                    <button class="details-button">View Details</button>
-                </div>
+                    <img alt="Paradise logo" src="Mountain.jpeg" class="place-image">
+                    <div class="price-rating">
+                        <p class="price">Price per night: <span>150€</span></p>
+                        <div class="rating">
+                          ★★★★☆
+                        </div>
+                        <a href="place.html">
+                        <button class="details-button index-button">View Details</button>
+                        </a>
+                      </div>
+                    </div>
                 <div class="place-card">
                     <h2>City Center Apartment</h2>
-                    <p>Price per night: 180€</p>
-                    <button class="details-button">View Details</button>
-                </div>
+                    <img alt="Paradise logo" src="Apartment.jpeg" class="place-image">
+                    <div class="price-rating">
+                        <p class="price">Price per night: <span>180€</span></p>
+                        <div class="rating">
+                          ★★★★★
+                        </div>
+                        <a href="place.html">
+                        <button class="details-button index-button">View Details</button>
+                        </a>
+                      </div>
+                    </div>
             </div>
         </div>
+    </div>
     </main>
 
     <footer>
@@ -88,4 +114,4 @@
     <!-- Scripts -->
     <script src="assets/js/script.js"></script>
 </body>
-</html>
+</html> 
