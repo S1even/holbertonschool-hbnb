@@ -6,53 +6,60 @@
   <title>HBnB - Project</title>
   <link rel="icon" type="image/x-icon" href="./favicon.ico">
   <link rel="icon" type="image/png" href="./favicon.png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles_place.css">
 </head>
 <body>
-  <header>
-    <nav>
-        <img alt="HBnB logo" src="icon.png" width="250" height="70">
-        <ul class="nav-link">
-            <li><a href= "index.html"class="nav-link">Home</a></li>
-            <li><a href="login.html"class="nav-link login-button">Login</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <div class="wrapper">
+        <nav>
+            <img alt="HBnB logo" src="icon.png" class="logo">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="login.html" class="nav-link login-button">Login</a></li>
+            </ul>
+        </nav>
+    </header>
 <body>
   <main>
     <h2>Beachside Paradise</h2>
     <div class="place-details">
-        <div class="place-info">
-            <h2>Host: John Doe</h2>
-            <p>Price per night: 200€</p>
-            <p>Description: A beautiful beachside property with stunning ocean views.</p>
-            <p>Amenities: Wi-Fi, Pool, Free Parking</p>
-        </div>
-    </div>
-    <section class="reviews">
-        <h2>Reviews</h2>
-        <div class="review-card">
-            <p>"Amazing experience!"</p>
-            <p>User: Jane Doe</p>
-            <p>Rating: 5/5</p>
-        </div>
-        <div class="review-card">
-            <p>"Loved the view!"</p>
-            <p>User: Alex Smith</p>
-            <p>Rating: 4/5</p>
-        </div>
-        <a href="add_review.html" class="details-button">Add a Review</a>
-    </section>
+      <div class="place-info">
+          <div class="place-text">
+          <h2><strong>Host:</strong> John Doe</h2>
+          <img alt="Paradise logo" src="Paradise.jpeg" class="place-image">
+          <p><strong>Price per night:</strong> 200€</p>
+          <p><strong>Description:</strong> A beautiful beachside property with stunning ocean views.</p>
+          <p><strong>Amenities:</strong> Wi-Fi, Pool, Free Parking</p>
+      </div>
+  </div>
+  <section class="reviews">
+      <h2>Reviews</h2>
+      <div class="review-card">
+          <p>"Amazing experience!"</p>
+          <p>User: Jane Clark</p>
+          <p>Rating: 5/5</p>
+          <p>★★★★★</p>
+      </div>
+      <div class="review-card">
+          <p>"Loved the view!"</p>
+          <p>User: Alex Smith</p>
+          <p>Rating: 4/5</p>
+          <p>★★★★☆</p>
+      </div>
+      <a href="add_review.html" class="details-button">Add a Review</a>
+  </section>
 </main>
 
 <main>
   <h2>Mountain Retreat</h2>
-<div class="place-details">
+  <div class="place-details">
     <div class="place-info">
-        <h2>Host: Sarah Johnson</h2>
-        <p>Price per night: 150€</p>
-        <p>Description: Escape to a serene mountain retreat with stunning views and cozy amenities.</p>
-        <p>Amenities: Fireplace, Hiking Trails, Free Parking</p>
+        <div class="place-text">
+        <h2><strong>Host:</strong> Sarah Johnson</h2>
+        <img alt="Paradise logo" src="Mountain.jpeg" class="place-image">
+        <p><strong>Price per night:</strong> 150€</p>
+        <p><strong>Description:</strong> Escape to a serene mountain retreat with stunning views and cozy amenities.</p>
+        <p><strong>Amenities:</strong> Fireplace, Hiking Trails, Free Parking</p>
     </div>
 </div>
 <section class="reviews">
@@ -61,11 +68,13 @@
         <p>"Absolutely breathtaking! Highly recommend."</p>
         <p>User: Emma Stone</p>
         <p>Rating: 5/5</p>
+        <p>★★★★★</p>
     </div>
     <div class="review-card">
         <p>"Great getaway spot for the weekend."</p>
         <p>User: Liam Parker</p>
         <p>Rating: 4/5</p>
+        <p>★★★★☆</p>
     </div>
     <a href="add_review.html" class="details-button">Add a Review</a>
 </section>
@@ -73,35 +82,38 @@
 </main>
 
 <main>
-  <h2>City Center Apartment</h2>
-<div class="place-details">
-    <div class="place-info">
-        <h2>Host: Michael Brown</h2>
-        <p>Price per night: 180€</p>
-        <p>Description: Stay in the heart of the city with easy access to attractions and vibrant nightlife.</p>
-        <p>Amenities: Wi-Fi, Kitchen, Nearby Public Transport</p>
-    </div>
-</div>
-<section class="reviews">
-    <h2>Reviews</h2>
-    <div class="review-card">
-        <p>"Perfect location and very clean."</p>
-        <p>User: Olivia Davis</p>
-        <p>Rating: 5/5</p>
-    </div>
-    <div class="review-card">
-        <p>"Could use better soundproofing, but overall a great stay."</p>
-        <p>User: Noah Wilson</p>
-        <p>Rating: 4/5</p>
-    </div>
-    <a href="add_review.html" class="details-button">Add a Review</a>
-</section>
+    <h2>City Center Apartment</h2>
+    <div class="place-details">
+      <div class="place-info">
+          <div class="place-text">
+          <h2><strong>Host:</strong> Michael Brown</h2>
+          <img alt="Paradise logo" src="Apartment.jpeg" class="place-image">
+          <p><strong>Price per night:</strong> 180€</p>
+          <p><strong>Description:</strong> Stay in the heart of the city with easy access to attractions and vibrant nightlife.</p>
+          <p><strong>Amenities:</strong> Wi-Fi, Kitchen, Nearby Public Transport</p>
+      </div>
+  </div>
+  <section class="reviews">
+      <h2>Reviews</h2>
+      <div class="review-card">
+          <p>"Perfect location and very clean."</p>
+          <p>User: Olivia Davis</p>
+          <p>Rating: 5/5</p>
+          <p>★★★★★</p>
+      </div>
+      <div class="review-card">
+          <p>"Could use better soundproofing, but overall a great stay."</p>
+          <p>User: Noah Wilson</p>
+          <p>Rating: 4/5</p>
+          <p>★★★★☆</p>
+      </div>
+      <a href="add_review.html" class="details-button">Add a Review</a>
+  </section>
 </main>
+<footer>
     
-<script src="scripts.js"></script>
-    <footer>
-      <p>&copy; 2024 HBnB - Made by Steven ツ - All rights reserved.</p>
-      <div class="social-icons">
+    <p>&copy; 2024 HBnB - Made by Steven ツ - All rights reserved.</p>
+    <div class="social-icons">
         <ul>
             <li>
                 <a href="https://www.facebook.com/HolbertonSchool/">
@@ -129,6 +141,7 @@
             </li>
         </ul>
     </div>
-  </footer>
+</footer>
+<script src="scripts.js"></script>
 </body>
 </html>
