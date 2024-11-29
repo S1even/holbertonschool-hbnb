@@ -1,0 +1,158 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #528cc466;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color:aqua;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #528cc466;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.social-icons ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons a svg {
+    fill: #000000;
+    transition: fill 0.3s;
+}
+
+.social-icons a:hover svg {
+    fill: #0078ff;
+}
+
+.place-card, .review-card, .place-details, .add-review {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.place-card h2, .review-card p, .place-details h2 {
+    margin: 5px 0;
+}
+
+.details-button {
+    background-color: #0078ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.details-button:hover {
+    background-color: #005bb5;
+}
+
+.reviews {
+    margin: 20px;
+    margin-top: 20px;
+}
+
+.add-review {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-review label {
+    margin: 10px 0 5px;
+}
+
+.add-review textarea, .add-review select, .add-review button {
+    margin: 5px 0;
+}
+
+.place-details {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+}
+
+.place-info h2 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.place-info p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 1rem;
+}
+
+.reviews h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.review-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.review-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+}
